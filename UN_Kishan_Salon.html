@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UN Kishan Salon | Chaupar Madan, Bochaha</title>
+<meta name="description" content="UN Kishan Salon - Hair Cutting, Shaving, Beard, Hair Colour और Facial. Chaupar Madan, Bochaha, Muzaffarpur.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#0b0b0d;color:#f7f2e8;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.hero{min-height:72vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:35px 18px;background:radial-gradient(circle at top,#49351b 0,#17120d 42%,#080809 100%);position:relative;overflow:hidden}
+.hero:before{content:"✂";position:absolute;font-size:240px;opacity:.035;right:-30px;top:20px;transform:rotate(-20deg)}
+.badge{display:inline-block;border:1px solid #c9a45b;color:#e5c477;padding:7px 16px;border-radius:30px;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+h1{font-family:Georgia,serif;font-size:clamp(44px,12vw,82px);margin:16px 0 8px;color:#f5d88b}
+.tagline{font-size:18px;color:#ddd;max-width:620px;margin:auto}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.btn{padding:13px 22px;border-radius:30px;font-weight:bold}
+.primary{background:#d3ad60;color:#111}.secondary{border:1px solid #d3ad60;color:#f1d58f}
+section{max-width:1050px;margin:auto;padding:55px 18px}
+.title{text-align:center;margin-bottom:28px}
+.title span{color:#d3ad60;font-size:13px;letter-spacing:3px}
+.title h2{font:36px Georgia,serif;margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:linear-gradient(145deg,#19191c,#111114);border:1px solid #302a20;border-radius:18px;padding:22px;display:flex;justify-content:space-between;gap:12px;transition:.2s}
+.card:hover{transform:translateY(-3px);border-color:#c9a45b}
+.icon{font-size:27px}.service h3{font-size:17px}.service p{color:#aaa;font-size:13px}.price{color:#e5c477;font-size:20px;font-weight:bold;white-space:nowrap}
+.contact{background:#15120e;border-top:1px solid #2e271d;border-bottom:1px solid #2e271d}
+.contactbox{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.info{padding:22px;border-radius:16px;background:#0e0e10;border:1px solid #2e2a24}
+.info small{color:#a99d86;display:block;margin-bottom:4px}.info strong{font-size:17px}
+footer{text-align:center;padding:28px 15px;color:#888;font-size:13px}
+.float{position:fixed;right:18px;bottom:18px;background:#c9a45b;color:#111;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:25px;font-weight:bold;box-shadow:0 8px 25px #000}
+@media(max-width:520px){.hero{min-height:67vh}.tagline{font-size:16px}.title h2{font-size:30px}.card{padding:18px}.price{font-size:18px}}
+
+.booking{background:linear-gradient(180deg,#0d0d0f,#17120d);border-top:1px solid #2e271d}
+.booking-box{max-width:720px;margin:auto;background:#0e0e10;border:1px solid #3a3020;border-radius:20px;padding:28px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}
+.field label{font-size:13px;color:#c9a45b}.field input,.field select,.field textarea{width:100%;padding:13px 14px;border-radius:9px;border:1px solid #39342d;background:#18181b;color:#fff;outline:none}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#c9a45b}
+.submit{width:100%;border:0;cursor:pointer;font-size:16px;margin-top:5px}
+.booking-result{display:none;margin-top:18px;padding:16px;border:1px solid #4c3b20;border-radius:12px;background:#17130d;color:#ddd}
+.booking-result strong{color:#e5c477}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.booking-box{padding:20px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div>
+    <div class="badge">Premium Grooming Studio</div>
+    <h1>UN Kishan Salon</h1>
+    <p class="tagline">आपके लुक को दें एक नया अंदाज़ — साफ-सुथरी सर्विस, शानदार स्टाइल और किफायती कीमत।</p>
+    <div class="btns">
+      <a class="btn primary" href="tel:6299750781">📞 Call Now</a>
+      <a class="btn secondary" href="#services">✂️ Services देखें</a>
+    </div>
+  </div>
+</header>
+
+<section id="services">
+  <div class="title"><span>OUR SERVICES</span><h2>हमारी सेवाएँ</h2></div>
+  <div class="grid">
+    <div class="card"><div class="service"><div class="icon">✂️</div><h3>Normal Hair Cutting + Shaving</h3></div><div class="price">₹70</div></div>
+    <div class="card"><div class="service"><div class="icon">💇</div><h3>Style Hair Cutting</h3></div><div class="price">₹50</div></div>
+    <div class="card"><div class="service"><div class="icon">🧔</div><h3>Beard Setting</h3></div><div class="price">₹40</div></div>
+    <div class="card"><div class="service"><div class="icon">🎨</div><h3>Hair Cutting + Shaving + Black Colour</h3></div><div class="price">₹120</div></div>
+    <div class="card"><div class="service"><div class="icon">✨</div><h3>Facial</h3></div><div class="price">₹80</div></div>
+  </div>
+</section>
+
+
+<section class="booking" id="booking">
+  <div class="title"><span>APPOINTMENT</span><h2>अपनी Booking करें</h2></div>
+  <div class="booking-box">
+    <form id="bookingForm">
+      <div class="form-grid">
+        <div class="field"><label>Customer Name *</label><input id="custName" required placeholder="अपना नाम"></div>
+        <div class="field"><label>Phone Number *</label><input id="custPhone" required type="tel" inputmode="numeric" maxlength="10" placeholder="10 अंकों का मोबाइल नंबर"></div>
+        <div class="field"><label>Booking Date *</label><input id="bookDate" required type="date"></div>
+        <div class="field"><label>Booking Time *</label><input id="bookTime" required type="time"></div>
+        <div class="field"><label>Service *</label>
+          <select id="bookService" required>
+            <option value="">Service चुनें</option>
+            <option>Normal Hair Cutting + Shaving — ₹70 (40 min)</option>
+            <option>Style Hair Cutting — ₹50 (25 min)</option>
+            <option>Beard Setting — ₹40 (20 min)</option>
+            <option>Hair Cutting + Shaving + Black Colour — ₹120 (50 min)</option>
+            <option>Facial — ₹80 (15 min)</option>
+          </select>
+        </div>
+        <div class="field"><label>Book ID</label><input id="bookId" readonly placeholder="Automatic"></div>
+        <div class="field full"><label>Customer Address *</label><textarea id="custAddress" required rows="3" placeholder="अपना पूरा पता लिखें"></textarea></div>
+        <div class="field full"><button class="btn primary submit" type="submit">✅ Booking Confirm करें</button></div>
+      </div>
+    </form>
+    <div class="booking-result" id="bookingResult"></div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="title"><span>VISIT US</span><h2>Contact & Location</h2></div>
+  <div class="contactbox">
+    <div class="info"><small>📍 ADDRESS</small><strong>Chaupar Madan, Bochaha, Muzaffarpur</strong></div>
+    <div class="info"><small>📱 MOBILE</small><strong><a href="tel:6299750781">6299750781</a></strong></div>
+    <div class="info"><small>🕘 BOOKING</small><strong>Call करके जानकारी लें</strong></div>
+  </div>
+  <div class="btns"><a class="btn primary" href="tel:6299750781">📞 अभी कॉल करें</a></div>
+</section>
+
+<footer>© 2026 UN Kishan Salon • Chaupar Madan, Bochaha, Muzaffarpur</footer>
+<a class="float" href="tel:6299750781" aria-label="Call UN Kishan Salon">☎</a>
+
+<script>
+function makeBookId(){
+  const d=new Date();
+  const stamp=d.getFullYear().toString().slice(-2)+(d.getMonth()+1).toString().padStart(2,'0')+d.getDate().toString().padStart(2,'0');
+  return 'UNKS-'+stamp+'-'+Math.floor(1000+Math.random()*9000);
+}
+document.getElementById('bookId').value=makeBookId();
+
+function downloadSlipById(id){
+  const raw=localStorage.getItem('UN_Kishan_Booking_'+id);
+  if(!raw){ alert('Booking details नहीं मिले। कृपया booking फिर से करें।'); return; }
+  const data=JSON.parse(raw);
+  const slip=`UN KISHAN SALON
+================================
+BOOKING SLIP
+Book ID: ${data.id}
+Customer Name: ${data.name}
+Phone: ${data.phone}
+Date: ${data.date}
+Time: ${data.time}
+Service: ${data.service}
+Address: ${data.address}
+================================
+Chaupar Madan, Bochaha, Muzaffarpur
+Contact: 6299750781
+Thank you for choosing UN Kishan Salon!
+`;
+  const htmlSlip=`<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Booking Slip ${data.id}</title><style>body{font-family:Arial,sans-serif;background:#f5f5f5;padding:20px}.slip{max-width:520px;margin:auto;background:white;padding:28px;border:2px solid #c9a45b;border-radius:14px}h1{text-align:center;margin:0;color:#8a641e}h2{text-align:center;margin:4px 0 20px}.row{padding:9px 0;border-bottom:1px solid #ddd}.label{font-weight:bold;color:#555}.thanks{text-align:center;margin-top:20px}</style></head><body><div class="slip"><h1>UN KISHAN SALON</h1><h2>BOOKING SLIP</h2><div class="row"><span class="label">Book ID:</span> ${data.id}</div><div class="row"><span class="label">Customer:</span> ${data.name}</div><div class="row"><span class="label">Phone:</span> ${data.phone}</div><div class="row"><span class="label">Date:</span> ${data.date}</div><div class="row"><span class="label">Time:</span> ${data.time}</div><div class="row"><span class="label">Service:</span> ${data.service}</div><div class="row"><span class="label">Address:</span> ${data.address}</div><p class="thanks">Chaupar Madan, Bochaha, Muzaffarpur<br>Contact: 6299750781<br><b>Thank you!</b></p></div></body></html>`;
+  const blob=new Blob([htmlSlip],{type:'text/html;charset=utf-8'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='UN-Kishan-Salon-Booking-'+data.id+'.html';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const phone=document.getElementById('custPhone').value.trim();
+  if(!/^\d{10}$/.test(phone)){alert('कृपया सही 10 अंकों का मोबाइल नंबर डालें।');return;}
+  const id=document.getElementById('bookId').value;
+  const data={
+    id:id,name:document.getElementById('custName').value.trim(),phone,
+    date:document.getElementById('bookDate').value,time:document.getElementById('bookTime').value,
+    service:document.getElementById('bookService').value,address:document.getElementById('custAddress').value.trim()
+  };
+  localStorage.setItem('UN_Kishan_Booking_'+id,JSON.stringify(data));
+  const result=document.getElementById('bookingResult');
+  result.style.display='block';
+  result.innerHTML='<strong>🎉 Booking Request तैयार है!</strong><br><br>Book ID: <strong>'+id+'</strong><br>नाम: '+data.name+'<br>समय: '+data.date+' '+data.time+'<br>Service: '+data.service+'<br><br><a class="btn primary" href="https://wa.me/916299750781?text='+encodeURIComponent('UN Kishan Salon Booking%0ABook ID: '+id+'%0AName: '+data.name+'%0APhone: '+data.phone+'%0ADate: '+data.date+'%0ATime: '+data.time+'%0AService: '+data.service+'%0AAddress: '+data.address)+'">📲 WhatsApp पर भेजें</a><br><br><button class="btn secondary" type="button" onclick="downloadSlipById(\''+id+'\')">📥 Booking Slip Download करें</button>';
+  result.scrollIntoView({behavior:'smooth',block:'center'});
+});
+</script>
+</body>
+</html>
